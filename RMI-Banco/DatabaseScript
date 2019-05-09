@@ -1,0 +1,16 @@
+-- Table: public.cliente
+
+-- DROP TABLE public.cliente;
+
+CREATE TABLE public.cliente
+(
+    nome text COLLATE pg_catalog."default" NOT NULL,
+    saldo text COLLATE pg_catalog."default" NOT NULL
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.cliente
+    OWNER to postgres;
